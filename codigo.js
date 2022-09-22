@@ -4,12 +4,14 @@ const btnCarrito = document.getElementById("btnCarrito")
 const contador = document.getElementById("contador")
 const finalizar = document.getElementById("btnFinalizar")
 
+// Asincronismo
 const cargarProductos = async () => {
     const response = await fetch('/productos.json')
     const productos = await response.json()
     return productos
 }
 
+// Funcion para mostrar productos en html
 cargarProductos().then(productos => {
     productos.forEach((producto, indice) => {
         divProductos.innerHTML+= `
@@ -34,18 +36,20 @@ let carrito = []
 let compraFinal = []
 
 
-
+// localStorage para guardar los productos en el carrito
 if(localStorage.getItem('carrito')) {
     carrito = JSON.parse(localStorage.getItem('carrito'))
 } else{
     localStorage.setItem('carrito', JSON.stringify(carrito))
 }
+// localStorage para guardar la compra finalizada
 if(localStorage.getItem('compra')) {
     compraFinal = JSON.parse(localStorage.getItem('compra'))
 } else{
     localStorage.setItem('compra', JSON.stringify(compraFinal))
 }
 
+// Funcion para agregar productos al carrito
 cargarProductos().then(productos => {
     productos.forEach((producto, indice) => {
         const cardProducto = document.getElementById(`producto${indice}`)
@@ -84,7 +88,7 @@ cargarProductos().then(productos => {
     })
 })
 
-
+// Mostrar carrito
 btnCarrito.addEventListener('click', () => {
     const verProdCarrito = JSON.parse(localStorage.getItem('carrito'))
     
@@ -104,6 +108,7 @@ btnCarrito.addEventListener('click', () => {
         </div>
         `
     })
+    // Borrar producto del carrito
     verProdCarrito.forEach((producto, indice) => {
         const borrarElemnto = document.getElementById(`producto${indice}`)
         
@@ -121,6 +126,7 @@ btnCarrito.addEventListener('click', () => {
             
         })
     })
+    // Finalizar compra
     verProdCarrito.forEach((producto, indice) => {
         const borrarElemnto = document.getElementById(`producto${indice}`)
         
