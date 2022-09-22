@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/estilos.css">
+    <title>New Max | Productos</title>
+</head>
+<body>
+    <!-- header inicio -->
+    <header>    
+        <nav class="navbar navbar-expand-lg navbar-dark header">
+            <!-- Brand -->
+            <button type="button" class="btn btn-dark btnCarro" id="btnCarrito" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+            </button>
+            <a class="navbar-brand" id="logo" href="#"><span id="logoSpan">New</span> Max</a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse barra" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" id="barra-estilo" href="/index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="barra-estilo" href="productos.html">PRODUCTOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="barra-estilo" href="info.html">¿QUIÉNES SOMOS?</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <!-- header fin -->
+    <!-- main inicio -->
+    <main class="conteiner mainModal">
+      <!-- Modal -->
+      <div class="modal fade row divModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">CARRITO</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modProd" id="divCarrito">
+
+            </div>
+            <div class="modal-body">
+              <p>Precio Total: $<span id="contador"></span></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="btnFinalizar">FINALIZAR COMPRA</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- main fin -->
+    <!-- section inicio -->
+    <section class="conteiner sectionProductos">
+      <div class="row tituloProd">
+        <h1>PRODUCTOS</h1>
+      </div>
+      <div id="divProductos" class="row divProdu">
+
+      </div>
+    </section>
+    <!-- section fin -->
+    <!-- footer inicio -->
+    <footer class="row footer">
+      <p class="col-12">© Todos los derechos reservados por copyright</p>
+    </footer>
+    <!-- footer fin -->
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.29/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/codigo.js"></script>
+</body>
+</html>

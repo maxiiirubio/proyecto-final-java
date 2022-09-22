@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "nombre": "Tabaco Chocolate",
+        "marca": "Choice",
+        "precio": 950,
+        "stock": 10,
+        "cantidad": 1,
+        "img": "choice-chocolate.jpg.jpeg"
+    },
+    {
+        "id": "2",
+        "nombre": "Tabaco Cherry",
+        "marca": "Van Kiff",
+        "precio": 570,
+        "stock": 15,
+        "cantidad": 1,
+        "img": "van-kiff-cherry.jpg.jpeg"
+    },
+    {
+        "id": "3",
+        "nombre": "Tabaco Vainilla",
+        "marca": "Arlequin",
+        "precio": 650,
+        "stock": 9,
+        "cantidad": 1,
+        "img": "arlequin-vainilla.jpg.jpeg"
+    },
+    {
+        "id": "4",
+        "nombre": "Tabaco Original",
+        "marca": "Raw",
+        "precio": 780,
+        "stock": 12,
+        "cantidad": 1,
+        "img": "raw-original.jpg.jpeg"
+    },
+    {
+        "id": "5",
+        "nombre": "Tabaco Menta",
+        "marca": "Argento",
+        "precio": 830,
+        "stock": 7,
+        "cantidad": 1,
+        "img": "argento-menta.jpg.jpeg"
+    },
+    {
+        "id": "6",
+        "nombre": "Tabaco Intense",
+        "marca": "Van Haansen",
+        "precio": 610,
+        "stock": 14,
+        "cantidad": 1,
+        "img": "van-haasen-intense.jpg.jpeg"
+    }
+]

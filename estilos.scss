@@ -1,0 +1,217 @@
+$color1: black;
+$color2: white;
+$color3: orangered;
+$color4: rgb(20, 20, 20);
+$color5: rgb(78, 77, 77);
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+.header{
+    background-color: $color1;
+    min-height: 80px;
+    padding: 0 20px;
+    #logo{
+        color: $color2;
+        font-size: 30px;
+        margin-left: 50px;
+        font-weight: 900;
+        font-family: 'Tapestry', cursive;
+
+        #logoSpan{
+            color: $color3;
+        }
+    }
+    .barra{
+        justify-content: end;
+
+        ul{
+            li{
+                #barra-estilo{
+                    color: $color2;
+                    font-size: 20px;
+                    font-weight: 900;
+                    font-family: 'Tapestry', cursive;
+                    &:hover{
+                        color: $color3;
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+.main{
+    min-height: calc(100vh - 100px);
+    // background-image: linear-gradient(to right top, #ff4500, #ff6781, #ffa0d2, #fad5fc, #ffffff);
+    // background-image: linear-gradient(to right top, #ff4500, #fd3d00, #fc3500, #fa2b00, #f81f00, #ff2739, #ff3a5d, #ff507d, #fe84ba, #f4b3e4, #f0dcfa, #ffffff);
+    // background-image: linear-gradient(to right top, #ff4500, #ff5a68, #ff83ae, #ffaee1, #fad5fc, #f7e4ff, #f8f2ff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
+    background-image: url(/imagenes/fondo-pantalla.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .titulo{
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        color: $color1;
+        font-weight: 900;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        .titulos-1{
+            max-width: 500px;
+            height: 120px;
+            // background-color: $color1;
+            background-image: radial-gradient(circle, #ffffff, #f2e5fb, #f3c8ee, #f9a8d4, #ff86ad, #ff7393, #ff6276, #ff5256, #ff4d47, #ff4836, #ff4622, #ff4500);
+            border: 5px solid $color1;
+            border-style: dashed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            font-weight: 900;
+            font-family: 'Tapestry', cursive;
+            letter-spacing: 10px;
+        }
+        .titulos-2{
+            height: 80px;
+            max-width: 400px;
+            // background-color: $color1;
+            background-image: radial-gradient(circle, #ffffff, #f2e5fb, #f3c8ee, #f9a8d4, #ff86ad, #ff7393, #ff6276, #ff5256, #ff4d47, #ff4836, #ff4622, #ff4500);
+            border: 5px solid $color1;
+            border-style: dashed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 900;
+            font-family: 'Tapestry', cursive;
+            letter-spacing: 5px;
+        }
+    }
+}
+.footer{
+    background-color: $color1;
+    height: 20px;
+    margin: 0;
+    color: $color2;
+    text-align: center;
+    font-size: 13px;
+}
+.mainModal{
+    display: flex;
+    align-content: center;
+
+    .modProd{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.sectionProductos{
+    background-image: radial-gradient(circle, #ffffff, #f2e5fb, #f3c8ee, #f9a8d4, #ff86ad, #ff7393, #ff6276, #ff5256, #ff4d47, #ff4836, #ff4622, #ff4500);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    .tituloProd{
+        display: flex;
+        margin: 0;
+        
+        h1{
+            display: flex;
+            justify-content: center;
+            font-size: 50px;
+            font-weight: 900;
+            font-family: 'Tapestry', cursive;
+            letter-spacing: 5px;
+            color: $color1;
+        }
+    }
+    
+    .divProdu{
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+
+        .productos{
+            display: flex;
+            margin: 25px;
+        }
+    }
+}
+
+.btnCarro{
+    i{
+        font-size: 30px;
+    }
+}
+.section{
+    min-height: calc(100vh - 100px);
+    background-image: linear-gradient(to left top, #ff4500, #ff5a68, #ff83ae, #ffaee1, #fad5fc, #f7e4ff, #f8f2ff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
+    display: flex;
+    align-items: center;
+    margin: 0;
+
+    .contFoto{
+        background: none;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        border: 0;
+
+        .foto{
+            border-radius: 180px;
+            width: 300px;
+            border: 5px solid $color1;
+            margin-bottom: 25px;
+            margin-top: 25px;
+        }
+        .redes{
+            font-size: 40px;
+            letter-spacing: 15px;
+            text-align: center;
+
+            a{
+                color: $color1;
+                &:hover{
+                    color: $color3;
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+    .perfilTexto{
+        padding: 60px;
+
+        @mixin sizes($color, $f-size, $f-weight) {
+            color: $color;
+            font-size: $f-size;
+            font-weight: $f-weight;
+        }
+
+        .textoPerfil1{
+            @include sizes($color1, 70px, 900);
+            font-family: 'Tapestry', cursive;
+            margin-bottom: 30px;
+
+            i{
+                color: $color3;
+                font-size: 70px;
+                text-align: left;
+                margin-right: 50px;
+            }
+        }
+        .textoPerfil2{
+            @include sizes($color4, 20px, 500);
+            text-align: justify;
+        }
+    }
+}
